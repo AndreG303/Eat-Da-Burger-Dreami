@@ -1,38 +1,54 @@
-<h1>Eat Da Burger!</h1>
-
-<h2>Burgers Allready Eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers to Eat</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 justify-content-center ">
+        <h1>Eat Da Dreami Burger!</h1>
+        <p>Just add that DREAMI burger...yes, that one! That decadent one you always wanted to eat, but were too afraid
+          of...Are you ready to DEVOUR IT?! </p>
+        <form class="create-form">
+          <h2>Add a Burger</h2>
+          <div class="form-group">
+            <label for="ca">Name of your Dreami Burger:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+          <div class="form-group">
+            <label for="devoured">Hungry?</label><br>
+            <input type="radio" name="devoured" value="1" checked>Ready to Eat<br>
+            <input type="radio" name="devoured" value="0"> Back Burner Da Burger
+          </div>
+          <button type="submit">Add Burger</button>
+        </form>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="form-group">
-    <label for="devoured">Hungry?</label><br>
-    <input type="radio" name="devoured" value="1" checked> devoured!<br>
-    <input type="radio" name="devoured" value="0"> Ready to Eat!
+<card class="eat">
+  <h2>Burgers Craving To Be Eaten</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+      </div>
+    </div>
   </div>
+</card>
 
-  <button type="submit">Add Burger</button>
-</form>
+<card class="later">
+  <h2>Burgers I Would Devour Again</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+      </div>
+    </div>
+  </div>
+</card>

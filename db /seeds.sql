@@ -1,6 +1,6 @@
-INSERT INTO burgers (burger_name) VALUES ('cheese');
-INSERT INTO burgers (burger_name) VALUES ('italian');
-INSERT INTO burgers (burger_name, devoured) VALUES ('avocado', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('sushi', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('beacon', true);
-INSERT INTO burgers (burger_name) VALUES ('tripple deck');
+INSERT INTO burgers (burger_name) VALUES ('PROK AND DUCK');
+INSERT INTO burgers (burger_name) VALUES ('GOLD');
+INSERT INTO burgers (burger_name, devoured) VALUES ('AHI TUNA', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('RIB EYE', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('FOIE GRAS', true);
+INSERT INTO burgers (burger_name) VALUES ('TRIPLE DECK');

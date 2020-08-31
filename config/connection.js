@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+// Set up MySQL connection
 var mysql = require("mysql");
 
 var connection = null;

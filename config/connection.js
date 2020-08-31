@@ -1,5 +1,4 @@
 var mysql = require("mysql");
-
 var connection = null;
 if(typeof process.env.JAWSDB_URL === "undefined"){
   connection = mysql.createConnection({

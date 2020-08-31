@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
   password: "mysqlbootcamp",
   database: "burgers_db"
 });
-
+};
 // Make connection.
 connection.connect(function(err) {
   if (err) {

@@ -1,6 +1,6 @@
 body {
   background-image: url("../images/burger.jpg");
-  background-size:cover;
+  background-size: cover;
   background-color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -9,96 +9,83 @@ body {
 
 h1 {
   color: red;
-  font-size:60px;
+  font-size: 60px;
   background-size: auto;
   font-family: Impact, fantasy;
-  font-weight:bolder;
-  text-align:center;
-  padding-top:20px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 20px;
 }
 
 h2 {
   color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
-  font-size:40px;
-  font-weight:700;
-  text-align:center;
-  background-color:red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: red;
 }
 
 p {
   color: #ffffff;
   font-family: Impact, fantasy;
-  font-weight:bolder;
-  font-size:24px;
-  text-align:center;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
   line-height: 1.05;
 }
 
-#ca{
+#ca {
   box-shadow: #ffffff;
   font-weight: bolder;
   font-size: 2rem;
   font-family: Impact, fantasy;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 label {
   font-weight: bold;
-  font-size:30px;
-  display:block;
+  font-size: 30px;
+  display: block;
   flex-wrap: wrap;
   font-family: Impact, fantasy;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .create-form {
   padding-left: 10%;
   padding-right: 10%;
-  margin-top:30px;
-  margin-bottom:10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   background: transparent;
-  color:#ffffff;
+  color: #ffffff;
   font-family: Impact, fantasy;
-
 }
 
 .form-group {
- margin-top:0px;
- margin-bottom: 0px;
- font-size:20px;
- font-weight:500;
- font-family: 'Times New Roman', Times, serif;
- font-family: Impact, fantasy;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.card{
+.card {
   min-width: 50px;
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size:18px;
+  font-size: 18px;
   text-align: center;
   align-self: center;
   font-family: Impact, fantasy;
 }
 
-.eat{
-  max-width: 1440px;
-  width: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.later{
+.eat {
   max-width: 1440px;
   width: 100%;
   margin: 0;
@@ -110,8 +97,88 @@ label {
   font-family: Impact, fantasy;
 }
 
-.change-devoured, .delete-burger{
+.later {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  font-family: Impact, fantasy;
+}
+
+.change-devoured,
+.delete-burger {
   width: 90%;
   align-self: center;
   margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    font-family: Impact, fantasy;
+    font-size: 16px;
+    color: red;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    background-color: red;
+  }
+
+  .form-group {
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .card {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    align-self: center;
+    font-family: Impact, fantasy;
+  }
+
+  .eat {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    font-family: Impact, fantasy;
+  }
+
+  .later {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    font-family: Impact, fantasy;
+  }
+
+  .change-devoured,
+  .delete-burger {
+    display:flex;
+    align-self: center;
+    margin-bottom: 5px;
+  }
 }

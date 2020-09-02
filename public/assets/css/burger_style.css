@@ -128,7 +128,7 @@ label {
   h1 {
     display: flex;
     align-items: center;
-    font-family: Impact, fantasy;
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     color: red;
   }
@@ -154,7 +154,7 @@ label {
     font-size: 14px;
     text-align: center;
     align-self: center;
-    font-family: Impact, fantasy;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .eat {
@@ -163,7 +163,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    font-family: Impact, fantasy;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .later {
@@ -172,7 +172,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    font-family: Impact, fantasy;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .change-devoured,
@@ -180,5 +180,6 @@ label {
     display:flex;
     align-self: center;
     margin-bottom: 5px;
+    font-family: "Times New Roman", Times, serif;
   }
 }

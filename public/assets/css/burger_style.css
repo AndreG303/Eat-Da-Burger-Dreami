@@ -141,6 +141,16 @@ label {
     background-color: red;
   }
 
+  p {
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+  }
+  
+
   .form-group {
     font-weight: 400;
     font-family: "Times New Roman", Times, serif;
